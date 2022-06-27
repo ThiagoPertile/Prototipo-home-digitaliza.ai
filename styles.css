@@ -1,0 +1,130 @@
+body {
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    color: var(--cor-fonte-principal);
+    background-color: var(--cor-bg);
+}
+ /* Variavis CSS */
+:root {
+   
+    --cor-bg: #F6F5F5;
+    --cor-fonte-principal: #444444;
+    --branco: #ffffff;
+    --roxo: #B116ED;
+    --laranja: #EC994B;
+    --azul: #0049E6;
+    --cinza-barra-de-busca:#EDEDED;
+    --cinza-placeholder:#aaaaaa;
+}
+/* Fim Variavis CSS */
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--branco);
+    height: 80px;
+
+}
+
+.container {
+    display: flex;
+    width: 1400px;
+    align-items: center;
+    justify-content: center;
+    margin: 0  auto;
+}
+
+
+/* NAVEGACAO */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.nav__item {
+    margin: 0 15px;
+    
+}
+
+.nav__item:hover {
+    cursor: pointer;
+    color: var(--laranja);
+}
+
+.nav__item::after {
+    font: var(--fa-font-solid);
+    content: "\f0d7";
+    margin-left: 8px;
+    color: #6d6d6d;
+}
+
+.nav__item:hover::after {
+    color: var(--roxo);
+}
+/* FIM NAVEGACAO */
+
+/* FIM MENU-USUARIO */
+.menu-usuario {
+    display: flex;
+    justify-content: space-evenly;
+    width: 187px;
+}
+
+.menu-usuario a {
+    color: var(--cor-fonte-principal);
+}
+
+.menu-usuario a:hover:first-child {
+    color: var(--laranja);
+}
+.menu-usuario a:hover{
+    color: var(--azul);
+}
+.menu-usuario a:hover:last-child{
+    color: var(--roxo);
+}
+/* FIM MENU-USUARIO */
+
+/* HERO */
+.hero__imagem{
+    width: 100vw;
+   /* size: 100%; */
+}
+/* FIM HERO */
+
+/* BARRA DE BUSCA */
+.barra-de-busca {
+        background-color: var(--branco);
+        height: 107px;
+        /* max-height: 107px; */
+        display: flex;
+}
+
+.barra-de-busca__input {
+    text-align: center;
+    /* width: 543px; */
+    width: 40vw;
+    /* height: 58px; */
+    height: 3.625rem;
+    margin: auto;
+    color: var(--cor-fonte-principal);
+    background: var(--cinza-barra-de-busca);
+    border-radius: 100px;
+    border: none;
+}
+
+.barra-de-busca__input:hover{
+/* cursor: pointer; */
+}
+
+.barra-de-busca__input::placeholder {
+    color: var(--cinza-placeholder);
+}
+
+.barra-de-busca__input:hover::placeholder {
+    font-size: 110%;
+}
+/* FIMBARRA DE BUSCA */
