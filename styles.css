@@ -6,7 +6,8 @@ body {
 }
  /* Variavis CSS */
 :root {
-   
+    
+    --fonte-principal: font-family: "Mulish", sans-serif;
     --cor-bg: #F6F5F5;
     --cor-fonte-principal: #444444;
     --branco: #ffffff;
@@ -78,10 +79,10 @@ body {
 }
 
 .menu-usuario a:hover:first-child {
-    color: var(--laranja);
+    color: var(--azul);
 }
 .menu-usuario a:hover{
-    color: var(--azul);
+    color: var(--laranja);
 }
 .menu-usuario a:hover:last-child{
     color: var(--roxo);
@@ -114,6 +115,8 @@ body {
     background: var(--cinza-barra-de-busca);
     border-radius: 100px;
     border: none;
+    font-family: var(--fonte-principal);
+    font-size: 1.2rem;
 }
 
 .barra-de-busca__input:hover{
@@ -121,10 +124,12 @@ body {
 }
 
 .barra-de-busca__input::placeholder {
+    font-family: var(--fonte-principal);
     color: var(--cinza-placeholder);
+    font-size: 1rem;
 }
 
 .barra-de-busca__input:hover::placeholder {
-    font-size: 110%;
+    font-size: 1.2rem;
 }
 /* FIMBARRA DE BUSCA */
