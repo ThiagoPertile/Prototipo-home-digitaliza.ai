@@ -50,7 +50,7 @@ body {
 
 .nav__item {
     margin: 0 15px;
-    
+    transition: all 250ms;
 }
 
 .nav__item:hover {
@@ -79,6 +79,7 @@ body {
 
 .menu-usuario a {
     color: var(--cor-fonte-principal);
+    transition: all 250ms;
 }
 
 .menu-usuario a:hover:first-child {
@@ -120,6 +121,7 @@ body {
     border: none;
     font-family: var(--fonte-principal);
     font-size: 1.2rem;
+    transition: all 250ms;
 }
 
 
@@ -127,10 +129,12 @@ body {
     font-family: var(--fonte-principal);
     color: var(--cinza-placeholder);
     font-size: 1rem;
+    transition: all 250ms;
 }
 
 .barra-de-busca__input:hover::placeholder {
     font-size: 1.2rem;
+    transition: all 250ms;
 }
 /* FIMBARRA DE BUSCA */
 
