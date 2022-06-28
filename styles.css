@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Mulish", sans-serif;
     font-weight: 400;
@@ -119,9 +122,6 @@ body {
     font-size: 1.2rem;
 }
 
-.barra-de-busca__input:hover{
-/* cursor: pointer; */
-}
 
 .barra-de-busca__input::placeholder {
     font-family: var(--fonte-principal);
@@ -133,3 +133,66 @@ body {
     font-size: 1.2rem;
 }
 /* FIMBARRA DE BUSCA */
+
+/* CARROSSEL 1 */
+.wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin-top: 30px;
+    padding: 15px 0;
+   }
+   .wrapper section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 25%);
+    margin: 80px 0;
+   }
+   .wrapper section .item {
+    padding: 0 2px;
+    transition: 250ms all;
+    border-radius: 50px;
+   }
+
+.wrapper section .item img {
+    border-radius: 50px;
+}
+
+   .wrapper section .item:hover {
+    /* padding: 0 16px; */
+    transform: scale(1.05);
+    cursor: pointer;
+   }
+   .wrapper section a {
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-size: 6em;
+    background: black;
+    width: 80px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+   }
+   .wrapper section a:nth-of-type(1) {
+    top: 25%;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+   }
+   .wrapper section a:nth-of-type(2) {
+    top: 25%;
+    bottom: 0;
+    right: 0;
+    background: transparent;
+   }
+   @media only screen and (max-width: 600px) {
+    a.arrow__btn {
+    display: none;
+    }
+   }
+/* FIM CARROSSEL 1 */
